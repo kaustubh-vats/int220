@@ -18,3 +18,4 @@
         <div class="footer_text copyrt">Netflix India Clone</div>
     </div>
 </footer>
+<script src="/int220/js/script_login.js"></script>

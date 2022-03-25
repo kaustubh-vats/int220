@@ -8,41 +8,41 @@
     </div>
     <div class="main_login">
         <div class="form_login">
-            <h1 class="frm_title">Sign In</h1>
+            <h1 class="frm_title">साइन इन करें</h1>
             <form action="" method="post">
                 <div class="form_group">
-                    <input class="login_inp" id="email" type="text" name="username" placeholder="Email or phone number" onfocusin="inputfocused()" onfocusout="inputfocusout()"required>
-                    <label id="hero_label" class="hero__label" for="email_entry">Email or phone number</label>
+                    <input class="login_inp" id="email" type="text" name="username" placeholder="ईमेल या फ़ोन नंबर" onfocusin="inputfocused()" onfocusout="inputfocusout()"required>
+                    <label id="hero_label" class="hero__label" for="email_entry">ईमेल या फ़ोन नंबर</label>
                     <label id="warning_label" class="warning_label"></label>
                 </div>
                 <div class="form_group">
-                    <input class="login_inp" id="password" type="password" name="password" placeholder="Password" onfocusin="inputfocused2()" onfocusout="inputfocusout2()"required>
-                    <span id="showPasswordBtn" onclick="showPass(this)">show</span>
-                    <label id="hero_label2" class="hero__label" for="password_entry">Password</label>
+                    <input class="login_inp" id="password" type="password" name="password" placeholder="पासवर्ड" onfocusin="inputfocused2()" onfocusout="inputfocusout2()"required>
+                    <span id="showPasswordBtn" onclick="showPass(this)">शो</span>
+                    <label id="hero_label2" class="hero__label" for="password_entry">पासवर्ड</label>
                     <label id="warning_label2" class="warning_label"></label>
                 </div>
                 <div class="form_group">
-                    <input type="submit" name="submit" value="Sign In" class="btn_login">
+                    <input type="submit" name="submit" value="साइन इन करें" class="btn_login">
                 </div>
                 <div class="form_group2">
                     <div class="remember">        
                         <input type="checkbox" id="remeber" name="remember" value="remember" checked>
-                        <label class="labels" for="remember">Remember me</label><br>
+                        <label class="labels" for="remember">याद रखें</label><br>
                     </div>
-                    <a href="https://www.netflix.com/in-hi/LoginHelp" class="labels">Need Help?</a>
+                    <a href="https://www.netflix.com/in-hi/LoginHelp" class="labels">आपको मदद चाहिए?</a>
                 </div>
             </form>
             <div class="fb_login">
                 <img src="/int220/imgs/fb_login.png" class="fb_logo" alt=""> 
-                <span>Login with Facebook</span>
+                <span>Facebook से लॉग इन करें</span>
             </div>
             <div class="new_to_netflix">
-                New to Netflix? <a href="/int220/in-hi">Sign up now.</a>
+                Netflix पर नए हैं? <a href="/int220/in-hi">अभी साइन अप करें.</a>
             </div>
             <div class="recaptcha">
-                <div class="short">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span id="readmore" class="blue_text" onclick="showmore(this)">Learn more.</span></div>
+                <div class="short">यह पक्का करने के लिए कि आप बॉट नहीं हैं, यह पेज Google reCAPTCHA द्वारा सुरक्षित है. <span id="readmore" class="blue_text" onclick="showmore(this)">और जानें.</span></div>
                 <div class="expand">
-                The information collected by Google reCAPTCHA is subject to the Google <a target="_blank" href="https://policies.google.com/privacy" class="blue_text">Privacy policy</a> and <a target="_blank" href="https://policies.google.com/terms" class="blue_text">Terms of Service</a>, and is used for providing, maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used for personalised advertising by Google)..
+                Google reCAPTCHA से इकट्ठा की गई जानकारी Google की <a target="_blank" href="https://policies.google.com/privacy" class="blue_text">प्रायवेसी पॉलिसी</a> और <a target="_blank" href="https://policies.google.com/terms" class="blue_text">सेवा की शर्तों</a> के अधीन है. इसे reCAPTCHA सेवा देने, उसे बनाए रखने और सुधारने के लिए और सामान्य सुरक्षा उद्देश्य के लिए इस्तेमाल किया जाता है (Google इसका इस्तेमाल करके पर्सनलाईज़ किए गए विज्ञापन नहीं दिखाता).
                 </div>
             </div>
         </div>
