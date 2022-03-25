@@ -14,3 +14,4 @@
         <li><a href="/int220/corpinfo/" class="footer_text footer_a">Corporate Informaion</a></li>
     </ul>
 </footer>
+<script src="/int220/js/legal.js"></script>

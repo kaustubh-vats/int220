@@ -3,9 +3,9 @@ include '../base_legal.php';
 include '../header_legal.php';
 ?>
 <div class="main_container">
-    <h1>Netflix Corporate Information</h1><br/>
+    <h1>Netflix कॉर्पोरेट की जानकारी</h1><br/>
     <p>
-        Netflix serves members in many different countries. The Netflix entity that provides you with access to the Netflix service depends on your country of membership, and will be listed in your membership or payment confirmation email. The Netflix entity/entities that qualify as your data controller are listed in your local privacy statement.
+        Netflix कई देशों के मेंबर्स को अपनी सेवा देता है. आपको Netflix सर्विस का ऐक्सेस देने वाली Netflix एंटिटी उस देश पर निर्भर करती है जहां आपने ​मेंबरशिप ली है और यह आपकी मेंबरशिप या पेमेंट कंफ़र्मेशन ईमेल में दिखाई देगी. आपके डेटा कंट्रोलर के तौर पर क्वालीफ़ाई करने वाली Netflix की एक/कई ​​एं​​टिटी​ ​​की लिस्ट आपके लोकल ​प्रायवेसी स्टेटमेंट​ में मौजूद होती है.
         <br />
         <br />
         <b>Netflix, Inc.</b><br />
@@ -17,7 +17,7 @@ include '../header_legal.php';
         1075 KZ Amsterdam, the Netherlands<br />
         KvK: 62266519<br />
         VAT: NL853746333B01<br />
-        Share Capital: 12,500 Euros<br />
+        शेयर कैपिटल: 12,500 यूरो<br />
         <br />
         <b>Netflix Entretenimento Brasil, Ltda.</b><br />
         Alameda Xingu, 350 - 14º andar - Alphaville Industrial<br />
@@ -41,25 +41,25 @@ include '../header_legal.php';
         <br />
         <b>Netflix Services UK Limited</b><br />
         100 New Bridge Street, London, EC4V 6JA<br />
-        Company No (Registration): 9091899<br />
-        Income Tax Registration No.: 623 25810 01805 A<br />
+        कंपनी नंबर (रजिस्ट्रेशन): 9091899<br />
+        इनकम टैक्स रजिस्ट्रेशन नं.: 623 25810 01805 A<br />
         <br />
         <b>Netflix Pte. Ltd.</b><br />
         9 Straits View, Marina One West Tower #14-07/12, Singapore 018937<br />
-        Registration ID No. 201531197W<br />
+        रजिस्ट्रेशन आईडी नं. 201531197W<br />
         <br />
         <b>Netflix Services France S.A.S.</b><br />
         11 Place Édouard VII, 75009 Paris, France<br />
-        Business Number: 843 655 549 RCS Paris<br />
+        बिज़नेस नंबर: 843 655 549 RCS Paris<br />
         <br />
         <b>Netflix Servicios de Transmisión España, S.L.</b><br />
         Paseo de la Castellana 89, 28046 Madrid, Spain<br />
-        VAT/NIF number B88182514<br />
+        VAT/NIF नंबर B88182514<br />
         <br />
         <b>Netflix México S. de R.L. de C.V.</b><br />
         Paseo de la Reforma 483, Piso 37, Col. Cuauhtémoc, Cuauhtémoc, CDMX, CP 06500<br />
-        Registration No.: 112483<br />
-        RFC (tax ID): NME110513P13<br />
+        रजिस्ट्रेशन नं.: 112483<br />
+        RFC (टैक्स आईडी): NME110513P13<br />
         <br />
         <b>Netflix Australia Pty Ltd.</b><br />
         Level 19, 181 William Street<br />
@@ -77,7 +77,7 @@ include '../header_legal.php';
         1200 Waterfront Centre, 200 Burrard St<br />
         Vancouver BC V7X 1T2, Canada<br />
         <br />
-        <b>Last Updated:</b> January 1, 2022
+        <b>आखिरी बार अपडेट किया गया:</b> 1 जनवरी 2022
     </p>
 </div>
 <?php
