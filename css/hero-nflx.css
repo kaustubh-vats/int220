@@ -34,7 +34,7 @@
     width: 680px;
 }
 .hero_details_content h1{
-    font-family: "NetFlixSans Medium" sans-serif;
+    font-family: "NetFlixSans Medium", sans-serif;
     font-size: 52px;
     line-height: 69px;
     margin: 0px;
