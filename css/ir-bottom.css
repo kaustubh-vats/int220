@@ -101,6 +101,8 @@
     gap: 70px;
 }
 .quick_links_card{
+    text-decoration: none;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,4 +165,7 @@
 }
 .quarterly_card a:hover{
     color: #E50914;
+}
+.quick_links_card:hover{
+    color:#E50914;
 }

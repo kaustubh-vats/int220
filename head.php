@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="css/nflx.css" data-uia="botLink">
-    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/>
+    <link rel="shortcut icon" href="/int220/imgs/favicon.ico"/>
     <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/hero.css"/>
     <link rel="stylesheet" href="css/footer.css"/>

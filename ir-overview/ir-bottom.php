@@ -50,22 +50,22 @@
             </div>
             <div class="quick_links_detail">
                 <div class="quick_links_array">
-                    <div class="quick_links_card">
+                    <a href="https://ir.netflix.net/financials/annual-reports-and-proxies/default.aspx" class="quick_links_card">
                         <img src="/int220/imgs/txt-rtf-doc.svg" alt="">
                         <h2>Annual Reports & Proxies</h2>
-                    </div>
-                    <div class="quick_links_card">
+                    </a>
+                    <a href="https://ir.netflix.net/financials/sec-filings/default.aspx" class="quick_links_card">
                         <img src="/int220/imgs/SEC-filings.svg" alt="">
                         <h2>SEC Filings</h2>
-                    </div>
-                    <div class="quick_links_card">
+                    </a>
+                    <a href="https://ir.netflix.net/stock-information/stock-quote/default.aspx" class="quick_links_card">
                         <img src="/int220/imgs/graph.svg" alt="">
                         <h2>Stock Information</h2>
-                    </div>
-                    <div class="quick_links_card">
+                    </a>
+                    <a href="https://ir.netflix.net/resources/investor-contacts/default.aspx" class="quick_links_card">
                         <img src="/int220/imgs/SEC-filings.svg" alt="">
                         <h2>IR Contacts</h2>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
