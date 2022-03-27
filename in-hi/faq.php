@@ -79,7 +79,7 @@
             </div>
         </div>
         <h4 class="label__hero_entry">देखने के लिए तैयार हैं? अपनी मेंबरशिप बनाने या रीस्टार्ट करने के लिए अपना ईमेल एड्रेस डालें.</h4>
-        <form class="container__form">
+        <form method="post" class="container__form" action="register.php">
             <span class="parent__label" onfocusin="inputfocused2()" onfocusout="inputfocusout2()">
                 <input class="email_entry" type="email" name="email" placeholder="ईमेल एड्रेस" id="email_entry2" required>
                 <label id="hero_label2" class="hero__label" for="email_entry2">ईमेल एड्रेस</label>

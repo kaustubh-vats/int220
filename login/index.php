@@ -37,7 +37,7 @@
                 <span>Login with Facebook</span>
             </div>
             <div class="new_to_netflix">
-                New to Netflix? <a href="/int220/in-hi">Sign up now.</a>
+                New to Netflix? <a href="/int220/">Sign up now.</a>
             </div>
             <div class="recaptcha">
                 <div class="short">This page is protected by Google reCAPTCHA to ensure you're not a bot. <span id="readmore" class="blue_text" onclick="showmore(this)">Learn more.</span></div>
