@@ -5,10 +5,10 @@
         <h2>सहायता केंद्र</h2>
     </div>
     <div class="header__container">
-        <div class="join_netflix">
+        <a href="/int220/in-hi/" class="join_netflix">
             Netflix जॉइन करें
-        </div>
-        <a href="\in-hi\login"><button class="button_login">साइन इन करें</button></a>
+        </a>
+        <a href="/int220/in-hi/login"><button class="button_login">साइन इन करें</button></a>
     </div>
 </header>
 <div class="top_menu">
