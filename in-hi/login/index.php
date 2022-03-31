@@ -4,10 +4,10 @@
     if(isset($_SESSION['email'])){
         session_unset();
         session_destroy();
-        header('Location: http://localhost/int220/');
+        header('Location: http://localhost/int220/in-hi/');
         exit;
     }
-    else if(isset($_POST) && isset($_POST['email']) && isset($_POST['password'])){
+    if(isset($_POST) && isset($_POST['email']) && isset($_POST['password'])){
         $passwordpo = hash('sha256', $_POST['password']);
         $server = 'localhost';
         $username = 'root';
@@ -22,7 +22,7 @@
         $result = $conn->query($sql);
         if($result -> num_rows > 0){
             $_SESSION['email'] = $_POST['email'];
-            header('Location: http://localhost/int220/');
+            header('Location: http://localhost/int220/in-hi/');
             exit;
         }else{
             echo '<script>alert("Login Failed")</script>';
@@ -40,12 +40,12 @@
             <h1 class="frm_title">साइन इन करें</h1>
             <form action="" method="post">
                 <div class="form_group">
-                    <input class="login_inp" id="email" type="text" name="username" placeholder="ईमेल या फ़ोन नंबर" onfocusin="inputfocused()" onfocusout="inputfocusout()"required>
+                    <input class="login_inp" id="email" type="text" name="email" placeholder="ईमेल या फ़ोन नंबर" onfocusin="inputfocused()" onfocusout="inputfocusout()" required>
                     <label id="hero_label" class="hero__label" for="email_entry">ईमेल या फ़ोन नंबर</label>
                     <label id="warning_label" class="warning_label"></label>
                 </div>
                 <div class="form_group">
-                    <input class="login_inp" id="password" type="password" name="password" placeholder="पासवर्ड" onfocusin="inputfocused2()" onfocusout="inputfocusout2()"required>
+                    <input class="login_inp" id="password" type="password" name="password" placeholder="पासवर्ड" onfocusin="inputfocused2()" onfocusout="inputfocusout2()" required>
                     <span id="showPasswordBtn" onclick="showPass(this)">शो</span>
                     <label id="hero_label2" class="hero__label" for="password_entry">पासवर्ड</label>
                     <label id="warning_label2" class="warning_label"></label>

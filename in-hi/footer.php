@@ -4,7 +4,7 @@
         <ul class="footer_list">
             <li><a href="https://help.netflix.com/support/412" class="footer_text footer_a">FAQ</a></li>
             <li><a href="https://help.netflix.com/" class="footer_text footer_a">सहायता केंद्र</a></li>
-            <li><a href="#" class="footer_text footer_a">अकाउंट</a></li>
+            <li><a href="account" class="footer_text footer_a">अकाउंट</a></li>
             <li><a href="https://media.netflix.com/" class="footer_text footer_a">मीडिया केंद्र</a></li>
             <li><a href="/int220/ir-overview" class="footer_text footer_a">इंवेस्टर संबंध</a></li>
             <li><a href="https://jobs.netflix.com/jobs" class="footer_text footer_a">नौकरियां</a></li>

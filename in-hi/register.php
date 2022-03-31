@@ -11,6 +11,25 @@
 </head>
 <body>
     <?php
+        if(isset($_POST) && isset($_POST['email'])){
+            $server = 'localhost';
+            $username = 'root';
+            $password = '';
+            $dbname = 'int220';
+        
+            $conn = new mysqli($server, $username, $password, $dbname);
+            if($conn->connect_error){
+            die('Connection Failed: '.$conn->connect_error);
+            }
+            $sql = "SELECT * FROM users where email = '".$_POST['email']."';";
+            $result = $conn->query($sql);
+            if($result -> num_rows > 0){
+                setcookie('emailsaved', 'true', 0, '/');
+                header("Location: http://localhost/int220/in-hi/");
+                exit;
+            } 
+            $conn->close();
+        }
         if(isset($_POST) && isset($_POST['email']) && isset($_POST['password'])){
             $server = 'localhost';
             $username = 'root';
@@ -25,29 +44,10 @@
             if($conn->query($sql) === true){
                 session_start();
                 $_SESSION['email'] = $_POST['email'];
-                header('Location: /int220/in-hi/');
+                header('Location: http://localhost/int220/in-hi/');
             } else {
                 echo 'Error: '.$sql.'<br>'.$conn->error;
             }
-            $conn->close();
-        }
-        if(isset($_POST) && isset($_POST['email'])){
-            $server = 'localhost';
-            $username = 'root';
-            $password = '';
-            $dbname = 'int220';
-        
-            $conn = new mysqli($server, $username, $password, $dbname);
-            if($conn->connect_error){
-            die('Connection Failed: '.$conn->connect_error);
-            }
-            $sql = "SELECT * FROM users where email = '".$_POST['email']."';";
-            $result = $conn->query($sql);
-            if($result -> num_rows > 0){
-                setcookie('emailsaved', 'true');
-                header("Location: http://localhost/int220/in-hi/");
-                exit;
-            } 
             $conn->close();
         }
         

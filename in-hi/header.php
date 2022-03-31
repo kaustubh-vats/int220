@@ -18,7 +18,12 @@
             if(isset($_COOKIE['emailsaved']) && $_COOKIE['emailsaved'] == "true"){
                 echo "<script>alert('ईमेल पहले से ही पंजीकृत है')</script>";
                 unset($_COOKIE['emailsaved']);
-                setcookie('emailsaved', 'false', time() - (86400 * 30));
+                setcookie('emailsaved', 'false', time() - (86400 * 30), '/');
+            }
+            if(isset($_COOKIE['notloggedin']) && $_COOKIE['notloggedin'] == "true"){
+                echo "<script>alert('लॉग इन करें')</script>";
+                unset($_COOKIE['notloggedin']);
+                setcookie('notloggedin', 'false', time() - (86400 * 30), '/');
             }
             ?>
         </button></a>

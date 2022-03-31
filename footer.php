@@ -4,7 +4,7 @@
         <ul class="footer_list">
             <li><a href="https://help.netflix.com/support/412" class="footer_text footer_a">FAQ</a></li>
             <li><a href="https://help.netflix.com/" class="footer_text footer_a">Help Centre</a></li>
-            <li><a href="#" class="footer_text footer_a">Account</a></li>
+            <li><a href="account" class="footer_text footer_a">Account</a></li>
             <li><a href="https://media.netflix.com/" class="footer_text footer_a">Media Centre</a></li>
             <li><a href="ir-overview" class="footer_text footer_a">Investor Relations</a></li>
             <li><a href="https://jobs.netflix.com/jobs" class="footer_text footer_a">Jobs</a></li>
