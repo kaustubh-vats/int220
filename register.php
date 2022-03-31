@@ -15,6 +15,22 @@
         <a href="login" class="loginBtn">Sign In</a>
     </header>
     <?php
+        function isValidEmail($email){ 
+            return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
+        }
+        function sendConfirmationMail($email){
+            $subject = "Welcome to Netflix Clone by Kaustubh Vats";
+            // $message = "You have been successfully registered for ";
+            $headers .= "Reply-To: kaustubhvats08@gmail.com";
+            $headers .= "MIME-Version: 1.0\r\n";
+            $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";               
+            $message = "<div><h1 style='width:100%; text-align:center;'>Welcome to Netflix Clone</h1><img style='width:100%;' src='https://c.tenor.com/wZW05QUURk4AAAAC/welcome-anime.gif' alt='animated welcome'><br /> <p style='width:100%; text-align:center;'>You Have successfully registered for Netflix Clone. <br />Enjoy the project<br />Created by: Kaustubh Vats<br />Thanks</p></div>";       
+            if(mail($email, $subject, $message, $headers)){
+                return true;
+            } else {
+                return false;
+            }
+        }
         if(isset($_POST) && isset($_POST['email'])){
             $server = 'localhost';
             $username = 'root';
@@ -47,6 +63,9 @@
                 VALUE ('".$_POST['email']."','".$passwordpo."','default')";
             if($conn->query($sql) === true){
                 session_start();
+                if(isValidEmail($_POST['email'])){
+                    sendConfirmationMail($_POST['email']);
+                }
                 $_SESSION['email'] = $_POST['email'];
                 header('Location: http://localhost/int220/');
                 exit;
