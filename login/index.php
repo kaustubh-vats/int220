@@ -7,7 +7,7 @@
         header('Location: http://localhost/int220/');
         exit;
     }
-    else if(isset($_POST) && isset($_POST['email']) && isset($_POST['password'])){
+    if(isset($_POST) && isset($_POST['email']) && isset($_POST['password'])){
         $passwordpo = hash('sha256', $_POST['password']);
         $server = 'localhost';
         $username = 'root';
