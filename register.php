@@ -18,13 +18,13 @@
         <div class="main">
             <div class="first">
                 <img src="/int220/imgs/Devices.png" alt="" class="devices">
-                <h6>step <b>1 of 3</b></h6>
+                <h6>Step <b>1 of 3</b></h6>
                 <h1>Finish setting up your account</h1>
                 <p>Netflix is personalised for you. Create a password to watch on any device at any time.</p>
                 <button class="btn" onclick="openSecond()">Next</button>
             </div>
             <div class="second">
-                <h6>step <b>1/3<b></h6>
+                <h6>Step <b>1/3<b></h6>
                 <h1>Create a password to start your membership</h1>
                 <p>Just a few more steps and you're done!<br />We hate paperwork, too.</p>
                 <form action="register">

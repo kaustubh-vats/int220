@@ -7,6 +7,6 @@
                 <option selected value="hi">हिन्दी</option>
             </select>
         </div>
-        <a href="login"><button class="button login">Sign In</button></a>
+        <a href="login"><button class="button login">साइन इन करें</button></a>
     </div>
 </header>

@@ -8,7 +8,7 @@
         <div class="join_netflix">
             Join Netflix
         </div>
-        <a href="login"><button class="button_login">Sign In</button></a>
+        <a href="\login"><button class="button_login">Sign In</button></a>
     </div>
 </header>
 <div class="top_menu">
