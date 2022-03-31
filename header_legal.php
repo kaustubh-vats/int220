@@ -6,9 +6,24 @@
     </div>
     <div class="header__container">
         <a href="/int220/" class="join_netflix">
-            Join Netflix
+            <?php
+            session_start();
+            if(isset($_SESSION['email'])){
+                echo "Go To Home";
+            } else {
+                echo "Join Netflix";
+            }
+            ?>
         </a>
-        <a href="/int220/login"><button class="button_login">Sign In</button></a>
+        <a href="/int220/login"><button class="button_login">
+            <?php
+                if(isset($_SESSION['email'])){
+                    echo "Sign Out";
+                } else {
+                    echo "Sign In";
+                }
+            ?>
+        </button></a>
     </div>
 </header>
 <div class="top_menu">

@@ -7,6 +7,20 @@
                 <option selected value="hi">हिन्दी</option>
             </select>
         </div>
-        <a href="login"><button class="button login">साइन इन करें</button></a>
+        <a href="login"><button class="button login">
+        <?php
+            session_start();
+            if(isset($_SESSION['email'])){
+                echo "साइन आउट करें";
+            } else {
+                echo "साइन इन करें";
+            }
+            if(isset($_COOKIE['emailsaved']) && $_COOKIE['emailsaved'] == "true"){
+                echo "<script>alert('ईमेल पहले से ही पंजीकृत है')</script>";
+                unset($_COOKIE['emailsaved']);
+                setcookie('emailsaved', 'false', time() - (86400 * 30));
+            }
+            ?>
+        </button></a>
     </div>
 </header>

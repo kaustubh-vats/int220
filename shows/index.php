@@ -38,6 +38,7 @@
         }
       }
     }
+    $conn->close();
     ?>
 </div>
 <?php

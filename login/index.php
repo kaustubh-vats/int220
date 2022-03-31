@@ -1,5 +1,34 @@
 <?php
     include 'base.php';
+    session_start();
+    if(isset($_SESSION['email'])){
+        session_unset();
+        session_destroy();
+        header('Location: http://localhost/int220/');
+        exit;
+    }
+    else if(isset($_POST) && isset($_POST['email']) && isset($_POST['password'])){
+        $passwordpo = hash('sha256', $_POST['password']);
+        $server = 'localhost';
+        $username = 'root';
+        $password = '';
+        $dbname = 'int220';
+    
+        $conn = new mysqli($server, $username, $password, $dbname);
+        if($conn->connect_error){
+        die('Connection Failed: '.$conn->connect_error);
+        }
+        $sql = "SELECT * FROM users where email = '".$_POST['email']."' and password = '".$passwordpo."';";
+        $result = $conn->query($sql);
+        if($result -> num_rows > 0){
+            $_SESSION['email'] = $_POST['email'];
+            header('Location: http://localhost/int220/');
+            exit;
+        }else{
+            echo '<script>alert("Login Failed")</script>';
+        }
+        $conn->close();
+    }
 ?>
 <div class="login_container">
     <div class="imgcont">
@@ -11,7 +40,7 @@
             <h1 class="frm_title">Sign In</h1>
             <form action="" method="post">
                 <div class="form_group">
-                    <input class="login_inp" id="email" type="text" name="username" placeholder="Email or phone number" onfocusin="inputfocused()" onfocusout="inputfocusout()"required>
+                    <input class="login_inp" id="email" type="text" name="email" placeholder="Email or phone number" onfocusin="inputfocused()" onfocusout="inputfocusout()"required>
                     <label id="hero_label" class="hero__label" for="email_entry">Email or phone number</label>
                     <label id="warning_label" class="warning_label"></label>
                 </div>

@@ -1,4 +1,3 @@
-
 <?php
   $servername = "localhost";
   $username = "root";
@@ -45,6 +44,31 @@
   $conn->close();
 ?>
 
+<?php
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname = "int220";
+  $conn = new mysqli($servername, $username, $password, $dbname);
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+  $sql = "CREATE TABLE users (
+  id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(200),
+  password VARCHAR(80),
+  image VARCHAR(300),
+  timestamp TIMESTAMP default CURRENT_TIMESTAMP
+  )";
+
+  if ($conn->query($sql) === TRUE) {
+    echo "Table users created successfully";
+  } else {
+    echo "Error creating table: " . $conn->error;
+  }
+  echo '<br>';
+  $conn->close();
+?>
 
 <?php
   $server = 'localhost';
