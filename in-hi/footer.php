@@ -16,7 +16,7 @@
             <li><a href="https://kaustubhvats-portfolio.netlify.app/#contact" target="_blank" class="footer_text footer_a">हमसे संपर्क करें</a></li>   
             <li><a href="https://fast.com/" class="footer_text footer_a">स्पीड टेस्ट</a></li>
             <li><a href="notices" class="footer_text footer_a">कानूनी सूचनाएं</a></li>
-            <li><a href="https://www.netflix.com/in-hi/browse/genre/839338" class="footer_text footer_a">सिर्फ़ Netflix पर</a></li>
+            <li><a href="shows" class="footer_text footer_a">सिर्फ़ Netflix पर</a></li>
         </ul>
         <div class="lang__select lang__select__footer">
             <select class="select__lang select__lang_footer" id="lang2">

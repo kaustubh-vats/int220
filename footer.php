@@ -16,7 +16,7 @@
             <li><a href="https://kaustubhvats-portfolio.netlify.app/#contact" target="_blank" class="footer_text footer_a">Contact Us</a></li>   
             <li><a href="https://fast.com/" class="footer_text footer_a">Speed Test</a></li>
             <li><a href="notices" class="footer_text footer_a">Legal Notices</a></li>
-            <li><a href="" class="footer_text footer_a">Only on Netflix</a></li>
+            <li><a href="shows" class="footer_text footer_a">Only on Netflix</a></li>
         </ul>
         <div class="lang__select lang__select__footer">
             <select class="select__lang select__lang_footer" id="lang2">
