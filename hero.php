@@ -7,7 +7,6 @@
     <h3>Watch anywhere. Cancel anytime.</h3>
     <h4 class="label__hero_entry">Ready to watch? Enter your email to create or restart your membership.</h4>
     <form method="post" class="container__form" action="register.php">
-        @csrf    
         <span class="parent__label" onfocusin="inputfocused()" onfocusout="inputfocusout()">
             <input type="email" name="email" placeholder="Email address" id="email_entry" class="email_entry" required>
             <label id="hero_label" class="hero__label" for="email_entry">Email address</label>
