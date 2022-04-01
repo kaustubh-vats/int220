@@ -18,7 +18,7 @@
             $subject = "कौस्तुभ वत्स द्वारा Netflix क्लोन में आपका स्वागत है";
             $headers .= "MIME-Version: 1.0\r\n";
             $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";               
-            $message = "<div><h1 style='width:100%; text-align:center;'>Netflix क्लोन में आपका स्वागत है</h1><img style='width:100%;' src='https://c.tenor.com/wZW05QUURk4AAAAC/welcome-anime.gif' alt='animated welcome'><br /> <p style='width:100%; text-align:center;'>आपने Netflix क्लोन के लिए सफलतापूर्वक पंजीकरण कर लिया है। <br />Project का आनंद लें<br />के द्वारा निर्मित: कौस्तुभ वत्स<br />धन्यवाद</p></div>";       
+            $message = "<div><h1 style='width:100%; text-align:center;'>नमस्कार, Netflix क्लोन में आपका स्वागत है</h1><img style='width:100%;' src='https://c.tenor.com/wZW05QUURk4AAAAC/welcome-anime.gif' alt='animated welcome'><br /> <p style='width:100%; text-align:center;'>आपने Netflix क्लोन के लिए सफलतापूर्वक पंजीकरण कर लिया है। <br />Project का आनंद लें<br />के द्वारा निर्मित: कौस्तुभ वत्स<br />धन्यवाद</p></div>";       
             if(mail($email, $subject, $message, $headers)){
                 return true;
             } else {
