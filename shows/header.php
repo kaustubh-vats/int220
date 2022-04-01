@@ -5,8 +5,23 @@
     <div class="header__container">
         <p>UNLIMITED TV SHOWS & MOVIES</p> 
         <a href="/int220/" class="join_netflix">
-            Join Now
+            <?php
+                session_start();
+                if(isset($_SESSION['email'])){
+                    echo "Go To Home";
+                } else {
+                    echo "Join Netflix";
+                }
+            ?>
         </a>
-        <a href="/int220/login"><button class="button_login">Sign In</button></a>
+        <a href="/int220/login"><button class="button_login">
+            <?php
+                if(isset($_SESSION['email'])){
+                    echo "Sign Out";
+                } else {
+                    echo "Sign In";
+                }
+            ?>
+        </button></a>
     </div>
 </header>

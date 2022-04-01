@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const lang2 = document.getElementById("lang2");
     lang2.addEventListener('change',event => {
