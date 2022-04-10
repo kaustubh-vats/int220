@@ -32,7 +32,7 @@
 ?>
 <div class="login_container">
     <div class="imgcont">
-        <img class="bg_img" src="/int220/imgs/bg-hi.jpg" alt="">
+        <img class="bg_img" src="/int220/imgs/bg-en.jpg" alt="">
         <div class="shadow"></div>
     </div>
     <div class="main_login">
